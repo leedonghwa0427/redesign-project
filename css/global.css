@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-header {
-  position: relative;
-}
-
 ul,
 li {
   list-style: none;
