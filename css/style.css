@@ -153,6 +153,7 @@ a {
 }
 
 .purpose {
+  height: 900px;
   position: relative;
   text-align: center;
   z-index: 2;
@@ -177,7 +178,7 @@ a {
 .purpose section {
   font-size: 20px;
   font-weight: 300;
-  position: absolute;
+
   left: 25%;
   top: 100%;
   z-index: 2;
@@ -190,31 +191,211 @@ a {
 .purpose img {
   width: 1000px;
   position: absolute;
-  z-index: 1;
-  transform: translate(480px, 250px);
+  transform: translate(430px, 300px);
 }
 
 .service {
+  position: relative;
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
 }
 
 .service-title {
-  justify-content: center;
+  color: #0b96ce;
 }
 
-.service-grid {
+.service h2 {
+  font-size: 30px;
+  padding: 30px;
+}
+
+.service-title span {
+  color: red;
+}
+.service-subtitle {
+  font-size: 20px;
+  color: #000;
+}
+
+.bg {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.service-wrap {
   display: flex;
   justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
 }
 
 .service-card img {
-  width: 100%;
-  height: 200px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
+.service-card:nth-child(2) {
+  transform: translateY(220px);
+}
+.service-card:nth-child(4) {
+  transform: translateY(220px);
+}
+
+.esg {
+  background-color: #ccc;
+  padding: 120px 0;
+  text-align: center;
+  margin-top: 420px;
+}
+.esg-title h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.esg-title {
+  color: #0b96ce;
+  margin-bottom: 20px;
+}
+.esg-title span {
+  color: red;
+}
+
+.esg-plan {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.esg-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.esg-item h2 {
+  margin: 20px;
+}
+
+.esg-item p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .circle {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #000000;
   border-radius: 50%;
-  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esg-item {
+  padding: 50px;
+}
+/* 가로 선 점 */
+.esg-line::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #1f06ff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+}
+/* 가로 선 */
+.esg-line {
+  top: -151px;
+  width: 35%;
+  height: 1px;
+  background: #000000;
+  margin: auto;
+  position: relative;
+}
+/* 세로 선 */
+.esg-item::after {
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #000000;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.esg-item:nth-child(2)::after {
+  height: 120px;
+}
+
+.esg-subplan {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.circle img {
+  width: 80px;
+}
+
+/* 세미나와 행사 */
+
+.seminar {
+  background-size: cover;
+  max-width: 1200px;
+
+  margin: 20px auto;
+  padding: 120px 20px;
+}
+
+.seminar h2 {
+  text-align: center;
+  color: #0b96ce;
+  font-size: 30px;
+}
+.seminar span {
+  color: red;
+}
+
+.seminar-sub {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.seminar-item {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.seminar-img img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 120px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.seminar-text {
+  max-width: 500px;
+}
+
+.seminar-text h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
